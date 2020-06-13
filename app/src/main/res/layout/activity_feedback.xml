@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.FeedbackActivity"
+    android:orientation="vertical">
+
+    <com.example.resume.myview.TitleBarView
+        android:id="@+id/titleview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+     <LinearLayout
+         android:id="@+id/ly"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/feedback_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/common_round_border"
+        android:gravity="left|top"
+        android:lines="10"
+        android:padding="5dp"
+        android:textSize="@dimen/sp_14" />
+
+    <Button
+        android:id="@+id/bt_send"
+        android:background="#6577FF"
+        android:textColor="@color/white"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="30dp"
+        android:text="确认"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+     </LinearLayout>
+
+</LinearLayout>

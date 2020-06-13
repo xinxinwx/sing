@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.UpdatapwdActivity"
+    android:orientation="vertical"
+    android:id="@+id/ly">
+
+    <com.example.resume.myview.TitleBarView
+        android:id="@+id/titleview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/et_updatapwd_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin5"
+        android:background="@color/white"
+        android:hint="请输入手机号"
+        android:inputType="phone"
+        android:maxLength="11"
+        android:padding="@dimen/margin15"
+        android:textColorHint="@color/hind_color"
+        android:textSize="@dimen/textsize14"
+        tools:ignore="HardcodedText" />
+
+
+
+    <EditText
+        android:id="@+id/et_updatapwd_change"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin5"
+        android:background="@color/white"
+        android:hint="请输入新密码"
+        android:inputType="phone"
+        android:maxLength="11"
+        android:padding="@dimen/margin15"
+        android:textColorHint="@color/hind_color"
+        android:textSize="@dimen/textsize14"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/bt_updatapwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="36dp"
+        android:background="#6577FF"
+        android:paddingBottom="@dimen/margin10"
+        android:paddingTop="@dimen/margin10"
+        android:text="修改密码"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textsize18"
+        tools:ignore="HardcodedText" />
+
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="black">#000000</color>
+    <color name="tv_topright">#B8B8B8</color>
+    <color name="title_color">#45A7F6</color>
+
+    <color name="text_black">#4d4d4d</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gray">#F4F4F4</color>
+    <color name="text_gray">#999999</color>
+    <color name="biaoge">#E4E4E4</color>
+    <color name="red">#f00</color>
+    <color name="login_text">#333333</color>
+    <color name="hind_color">#aeaeae</color>
+    <color name="line">#cfcfcf</color>
+    <color name="error_bg">#999999</color>
+
+    <color name="gallery_blue">#45A7F6</color>
+</resources>

@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.resume.myview.TitleBarView
+        android:id="@+id/tbv_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp">
+        <ImageView
+            android:id="@+id/morning"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/morning"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+        <TextView
+            android:id="@+id/morning_tv"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/morning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/location"
+            android:layout_below="@+id/morning_tv"
+            android:layout_toRightOf="@+id/morning"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/location"
+            android:layout_width="15dp"
+            android:layout_height="15dp"/>
+
+        <TextView
+            android:id="@+id/location_tv"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/location"
+            android:layout_below="@+id/morning_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="3dp"
+        android:layout_height="40dp"
+        android:background="#ccc"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="5dp"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp">
+        <ImageView
+            android:id="@+id/night"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/night"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+
+        <TextView
+            android:id="@+id/night_tv"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/night"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/location1"
+            android:layout_below="@+id/night_tv"
+            android:layout_toRightOf="@+id/night"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/location"
+            android:layout_width="15dp"
+            android:layout_height="15dp"/>
+
+        <TextView
+            android:id="@+id/location1_tv"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/location1"
+            android:layout_below="@+id/night_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/singin"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            >
+
+            <ImageView
+                android:id="@+id/face"
+                android:layout_centerHorizontal="true"
+                android:layout_width="200dp"
+                android:layout_height="200dp"/>
+
+
+            <TextView
+                android:textColor="#ffff"
+                android:textSize="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="刷脸打卡"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/clocation"
+                android:src="@drawable/location"
+                android:layout_width="20dp"
+                android:layout_height="20dp"/>
+
+            <TextView
+                android:id="@+id/kq1"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/clocation"
+                android:text="您已进入考勤范围"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/kq1"
+                android:text="刷新位置"
+                android:textColor="#6577FF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/refresh"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/errsing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            >
+
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/noface"
+                android:layout_width="200dp"
+                android:layout_height="200dp"/>
+
+
+            <TextView
+                android:textSize="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="刷脸打卡"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/fail"
+                android:src="@drawable/fail"
+                android:layout_width="20dp"
+                android:layout_height="20dp"/>
+
+            <TextView
+                android:id="@+id/kq"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/fail"
+                android:text="您未进入考勤范围"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/kq"
+                android:text="刷新位置"
+                android:textColor="#6577FF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/refresh1"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <com.amap.api.maps.MapView
+        android:layout_marginTop="10dp"
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
